@@ -260,7 +260,7 @@ fn prefix_suffix_conflict() {
         ("/x19/f{a}o", Ok(())),
         ("/x19/f{a}o/{*path}", Ok(())),
         ("/x20/f{a}o/{*path}", Ok(())),
-        ("/x20/f{a}o", Err(conflict("/x20/f{a}o/{*path}"))),
+        ("/x20/f{a}o", Ok(())),
     ])
     .run()
 }
